@@ -12,7 +12,6 @@
     
 </head>
 <body>
-    <a class="skip" href="#skip">Skip to main content</a> 
     <header class="header">
         <nav class="navbar">
             <!-- logo -->
@@ -29,7 +28,7 @@
                     </li>
 
                     <li>
-                        <a href="contact.html" class="nav_item">CONTACT</a>
+                        <a href="#contact" class="nav_item">CONTACT</a>
                     </li>
 
                     <li>
@@ -40,49 +39,34 @@
         </nav>
     </header>
 
-    <!-- shop -->
-    <!-- <section class="section category" id="shop">
-        <div class="title">
-            <h1>Shop</h1>
-            <p>Shop all beaded items!</p>
-          </div>
-        <div class="cat-center">
-          <div class="cat">
-            <a href="collections.html"><img src="/images/zenitsu.jpeg" alt="collections"></a>
-            <div>
-              <p>COLLECTIONS</p>
-            </div>
-          </div>
+    <h1>CONTACT US</h1>
 
-          <div class="cat">
-            <a href="jewelry.html"><img src="/images/tanjiro.jpeg" alt="jewelry"></a>
-            <div>
-              <p>JEWELRY</p>
-            </div>
-          </div>
-
-          <div class="cat">
-            <a href="keychains.html"><img src="/images/inosuke.jpeg" alt="keychains"></a>
-            <div>
-              <p>KEYCHAINS</p>
-            </div>
-          </div>
-
-          <div class="cat">
-            <a href="phone-charms.html"><img src="/images/uzui.jpg" alt="phone-charms"></a>
-            <div>
-              <p>PHONE CHARMS</p>
-            </div>
-          </div>
-        
-        </div>
-    </section> -->
+    <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="concern">Concern</label>
+          <select id="concern" name="Concern Type">
+            <option value="product">Product</option>
+            <option value="shipping">Shipping</option>
+            <option value="other">Other</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
 
     <footer>
         <p>Tiffany Tam<br>
-        <a href="">@stxrrydreams_</a>
+        <a href="https://www.instagram.com/stxrrydreams_/">@stxrrydreams_</a>
         <!-- <a href="mailto:xyz@example.com">zyx@example.com</a></p> -->
     </footer>
-
 </body>
 </html>

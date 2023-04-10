@@ -5,85 +5,118 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stxrrydreams</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="icon" type="image/x-icon" href="img/[picname]"> -->
-    <!-- icon image  -->
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- Google Fonts -->
+    <!-- Font Awesome: nav -->
+    
 </head>
-
 <body>
-    <!-- Anchor target to navigate within the same page. By prepending your href with # , you can target an HTML element with a specific id attribute. For example, <a href="#footer"> will navigate to the <div id="footer"> within the same HTML document. This type of href is often used to navigate back to the top of the page. -->
-    <a class="skip" href="#skip">Skip to main content</a>
-    <header class="navigation">
-        <!-- logo pic to include both the logo+text -->
-        <img src="/" alt="logo" id="logo">
-        <nav>
-            <ul class="nav_links">
-                <!-- About -->
-                <li class="nav_item">
-                    <a href="#skip">About</a>
-                </li>
-                <!-- Shop -->
-                <!-- when the user clicks shop, it brings to the entire collection by newest - oldest (include filter w check marks) -->
-                <li class="nav_item">
-                    <a href="#shop">Shop</a>
-                </li>
-                <!-- Contact -->
-                <li class="nav_item">
-                    <a href="#contact">Contact</a>
-                </li>
-                <!-- Cart -->
-                <li>
-                    <a href="cart.html">Temp Cart</a>
-                </li>
-            </ul>
+    <a class="skip" href="#skip">Skip to main content</a> 
+    <header class="header">
+        <nav class="navbar">
+            <!-- logo -->
+            <a href="index.html" class="logo-name"><img src="images/stxrry.png" alt="logo" height="50px"> stxrrydreams</a>
+
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="#about" class="nav_item">ABOUT</a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html" class="nav_item">SHOP</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav_item">CONTACT</a>
+                    </li>
+
+                    <li>
+                        <a href="cart.html" class="nav_item">CART</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
+        <div class="intro" id="skip">
+            <!-- <img background-image src="images/intro.png" alt="intro pic" class="intro-pic"> -->
+            <div class="intro-text">
+                <h1>stxrrydreams</h1> 
+                <p>Hello and welcome to my shop! <br> I like to create art and am constantly inspired by various aesthetics and media.</p> 
+                <a href="shop.html" class="intro-btn">Shop Now</a>
+            </div>
+        </div>
     </header>
 
-    <main class="about" id="skip">
-        <div id="about">
-            <h1>stxrrydreams</h1>
-            <h2>Hello and welcome to my shop! I like to create art and am constantly inspired by various aesthetics and media.</h2> 
-            <!-- remove h3 later -->
-            <h3>Pages with pictures: index.html and collections.html</h3>
-            <img src="/" alt="logo">
+    <!-- <hr width="100%" size="2" color="grey">  -->
+
+    <section class="about-sec" id="about">
+        <div class="row">
+            <div class="about" id="about-pic">
+                
+            </div>
+            <div class="about" style="background-color:#fff;" id="about-text">
+              <h1>About Me</h1>
+              <p>My name is Tiffany and I am a student studying User Experience Design! <br>I love creating art and hope to work on my graphic design skills. :^0 <br> Visit my Instagram @stxrrydreams_</p>
+            </div>
+          </div>
+    </section>
+
+    <!-- shop -->
+    <section class="section category" id="shop">
+        <div class="title">
+            <h1>Shop</h1>
+            <p>Shop all beaded items!</p>
+          </div>
+        <div class="cat-center">
+          <div class="cat">
+            <a href="collections.html"><img src="/images/zenitsu.jpeg" alt="collections"></a>
+            <div>
+              <p>COLLECTIONS</p>
+            </div>
+          </div>
+
+          <div class="cat">
+            <a href="jewelry.html"><img src="/images/tanjiro.jpeg" alt="jewelry"></a>
+            <div>
+              <p>JEWELRY</p>
+            </div>
+          </div>
+
+          <div class="cat">
+            <a href="keychains.html"><img src="/images/inosuke.jpeg" alt="keychains"></a>
+            <div>
+              <p>KEYCHAINS</p>
+            </div>
+          </div>
+
+          <div class="cat">
+            <a href="phone-charms.html"><img src="/images/uzui.jpg" alt="phone-charms"></a>
+            <div>
+              <p>PHONE CHARMS</p>
+            </div>
+          </div>
+        
         </div>
+    </section>
 
-        <div id="shop">
-            <figure class="collections">
-                <a href="collections.html">
-                <img src="images/bunny.jpeg" alt="bunny" width="100px" height="100px">
-                <figcaption>collections</figcaption></a>
-            </figure>
+    <section class="contact">
+        <div class="contact-info">
+            <!-- <img background-image src="images/intro.png" alt="intro pic" class="intro-pic"> -->
+            <div class="context-text">
+                <h1>Contact</h1> 
+                <p>Have any questions or concerns? <br> Fill out the form by clicking the button below!</p> 
+                <a href="contact.html" class="intro-btn" id="intro-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
 
-            <figure class="jewelry">
-                <a href="jewelry.html"><img src="images/totoro.jpeg" alt="totoro" width="100px" height="100px">
-                <figcaption>jewelry</figcaption></a>
-            </figure>
+    <footer>
+        <p>Tiffany Tam<br>
+        <a href="">@stxrrydreams_</a>
+        <!-- <a href="mailto:xyz@example.com">zyx@example.com</a></p> -->
+    </footer>
 
-            <figure class="keychains">
-                <a href="keychains.html"><img src="/images/totoro.jpeg" alt="totoro">
-                    <figcaption>keychains</figcaption></a>
-            </figure>
-
-            <figure class="phone-charms">
-                <a href="phone-charms.html"><img src="/images/totoro.jpeg" alt="totoro">
-                    <figcaption>phone charms</figcaption></a>
-            </figure>
-
-            <img src="/images/totoro.jpeg" alt="totoro">
-            <img src="/images/totoro.jpeg" alt="totoro">
-            <img src="/images/totoro.jpeg" alt="totoro">
-            <img src="/images/totoro.jpeg" alt="totoro">
-            <img src="/images/totoro.jpeg" alt="totoro">
-            
-        </div> 
-
-        <div id="contact">
-            <h1>Contact Us!</h1>
-            <p>insert form here</p>
-        </div> 
-
-    </main>
 </body>
-
 </html>
