@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stxrrydreams</title>
+    <title>contact</title>
     <link rel="stylesheet" href="css/newstyle.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <!-- Google Fonts -->
@@ -20,15 +20,15 @@
             <div class="nav-links">
                 <ul>
                     <li>
-                        <a href="#about" class="nav_item">ABOUT</a>
+                        <a href="index.html" class="nav_item">ABOUT</a>
                     </li>
 
                     <li>
-                        <a href="#shop" class="nav_item">SHOP</a>
+                        <a href="shop.html" class="nav_item">SHOP</a>
                     </li>
 
                     <li>
-                        <a href="#contact" class="nav_item">CONTACT</a>
+                        <a href="contact.html" class="nav_item">CONTACT</a>
                     </li>
 
                     <li>
@@ -39,27 +39,28 @@
         </nav>
     </header>
 
-    <h1>CONTACT US</h1>
+    <h1 class="contact-header">CONTACT US</h1>
 
     <div class="container">
         <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="name">Name <span class="req">*</label>
+          <input type="text" id="name" name="name" placeholder="Name" required>
       
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Email Address <span class="req">*</label>
+          <input type="text" id="email" name="email" placeholder="Email address" required>
       
-          <label for="concern">Concern</label>
-          <select id="concern" name="Concern Type">
+          <label for="concern">Concern <span class="req">*</label>
+          <select id="concern" name="Concern Type" required>
             <option value="product">Product</option>
             <option value="shipping">Shipping</option>
             <option value="other">Other</option>
           </select>
       
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <label for="subject">Message <span class="req">*</label>
+          <textarea id="subject" name="subject" placeholder="Leave a message!" style="height:200px" required></textarea>
       
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit"> 
+          <p><span class="req req-info">*</span> - Required field</p>
         </form>
       </div>
 
