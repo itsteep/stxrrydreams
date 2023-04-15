@@ -120,7 +120,7 @@ nav {
     transition: 0.5s; 
 } 
 
-/* intro CSS for index */
+/* about CSS for index */
 
 .row {
     display: flex; 
@@ -192,7 +192,7 @@ nav {
     height: 25rem;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
     text-align: center;
 }
   
@@ -270,7 +270,7 @@ footer {
     text-align: center;
     padding: 3px;
     background-color: #fed0d2;
-    color: white;
+    color: black;
 }
 
 /* .footer a {
@@ -279,9 +279,9 @@ footer {
 } */
 
 .footer-insta {
-    text-decoration-color: #fff;
+    text-decoration-color: #000;
     text-decoration: none; 
-    color: #fff; 
+    color: #000; 
 }
 
 /* form */
@@ -439,3 +439,53 @@ input[type=submit]:hover {
 } */
 
 /* cart CSS */ 
+
+
+.about-links {
+    text-decoration: underline; 
+    color: slateblue; 
+}
+
+/* CSS for gallery */ 
+.gallery {
+    margin: 0; 
+}
+
+.image-grid { 
+    --gap: 16px; 
+    --num-cols: 4; 
+    --row-height: 300px; 
+
+    box-sizing: border-box; 
+    padding: var(--gap); 
+
+    display: grid; 
+    grid-template-columns: repeat(var(--num-cols), 1fr); 
+    grid-auto-rows: var(--row-height);  
+
+    gap: var(--gap); 
+}
+
+.image-grid > img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+} 
+
+/* image takes up 2 columns */
+.image-grid-col-2 {
+    grid-column: span 2; 
+}
+
+/* image takes up 2 rows */
+.image-grid-row-2 {
+    grid-row: span 2; 
+}
+
+/* anything under 1024px */
+@media screen and (max-width: 1024px) {
+    .image-grid {
+        --num-cols: 2; 
+        --row-height: 200px; 
+    }
+}
