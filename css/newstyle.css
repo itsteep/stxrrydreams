@@ -172,7 +172,8 @@ nav {
 
 #about-text h1 {
     font-size: 30px; 
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif; 
+    padding-bottom: 10px;
 }
 
 #about-text p {
