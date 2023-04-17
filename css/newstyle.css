@@ -69,7 +69,8 @@ nav {
 .nav_item {
     color: #000000; 
     text-decoration: none; 
-    font-size: 20px;
+    font-size: 20px; 
+    /* font-weight: 600;  */
 } 
 
 .nav-links ul li::after {
@@ -113,6 +114,7 @@ nav {
 .intro h1 {
     font-size: 50px; 
     font-family: 'Playfair Display', serif;
+    font-weight: 600; 
 }
 
 .intro p {
@@ -248,7 +250,7 @@ nav {
     font-weight: 600;
 }
 
-.cat p {
+.cat h1 {
     background-color: #fff; 
     color:#000; 
     text-decoration: none;
@@ -320,6 +322,9 @@ nav {
 /* footer CSS for all pages */
 
 footer {
+    /* position: fixed;  */
+    bottom: 0px; 
+    width: 100%;  
     text-align: center;
     padding: 15px;
     background-color: #fed0d2;
@@ -377,7 +382,7 @@ input[type=submit]:hover {
 }
 
 .req {
-    color: red; 
+    color: #0008FF; 
 }
 
 /* .req-info {
@@ -418,7 +423,7 @@ input[type=submit]:hover {
 .gallery__img { 
     opacity: 1.0; 
     filter: alpha(opacity=100); 
-} 
+}  
 
 .gallery__img:hover {
     /* transform: scale(1.05);  */
@@ -427,7 +432,7 @@ input[type=submit]:hover {
 } 
 
 .gallery__item:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
 .coming-soon {
@@ -494,8 +499,12 @@ input[type=submit]:hover {
 } */
 
 /* cart CSS */ 
-.Cart-Header h1 {
+.cart h1 { 
+    padding-top: 50px;
     text-align: center; 
+    font-family: 'Playfair Display', serif;
+    font-weight: 600; 
+    font-size: 3rem; 
 }
 
 .about-links {
