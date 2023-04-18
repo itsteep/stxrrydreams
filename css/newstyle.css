@@ -277,14 +277,21 @@ nav {
 .row {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     min-height: 60vh; 
-    padding: 5px; 
-    justify-content: space-between;
+    padding: 35px; 
+    justify-content: center;
+  }
+
+  iframe {
+    max-width: 100%; 
   }
   
-  .about-pic img {
-    max-width: 100%;
-    height: auto;
+  .about-vid {
+    flex-basis: 40%; 
+    height: auto; 
+    justify-content: center; 
+    align-items: center;
   }
 
   /* .about {
@@ -321,17 +328,16 @@ nav {
   }
   
   #about-text {
-    padding: 10rem 0 5rem 0;
     overflow: hidden;
   }
 
   @media screen and (min-width: 780px) {
-    .row {
+    /* .row {
       display: flex;
       min-height: 60vh;
-    }
+    } */
     
-    .about {
+    /* .about {
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -342,13 +348,12 @@ nav {
     .about:first-child {
       margin-right: 0;
       margin-bottom: 20px;
-    }
-    
-    /* #about-pic {
-      background-image: url("../images/distraught.JPG");
-      background-repeat: no-repeat;
-      margin-bottom: 20px;
     } */
+    
+    .about-vid {
+        width: 560; 
+        height: 315;
+    }
     
     #about-text {
       text-align: center;
@@ -739,3 +744,42 @@ input[type=submit]:hover {
         --row-height: 200px; 
     }
 }
+
+.gallery-button {
+    
+    display: inline-block; 
+    text-decoration: none; 
+    color: #000000; 
+    border: 1px solid #000000; 
+    padding: 10px 35px; 
+    font-size: 15px; 
+    background: transparent; 
+    position: relative; 
+    cursor: pointer; 
+    z-index: 1; 
+    transform: translate(50%, -100%);
+}
+    
+
+.gallery-button:hover { 
+    text-decoration: underline;
+    /* border: 1px solid #fed0d2; 
+    background-color: #fed0d2;  */
+    /* transition: 1.5s;  */
+} 
+
+/* .skip {
+    background-color: #fff; 
+    color: #000; 
+    left: 50%; 
+    position: absolute; 
+    padding: 10px; 
+    transform: translate(-50%, -100%);
+    transition: transform 0.3s; 
+    z-index: 100; 
+    font-size: 24px; 
+} 
+
+.skip:focus {
+    transform: translate(-50%, 0%);
+} */
